@@ -1,0 +1,126 @@
+html, body {
+    background-color: blanchedalmond;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*------------------------------------*/
+.divisorLine {
+    border-right: 2px solid black;
+}
+/*------------------------------------*/
+.contGeneral {
+    margin: auto;
+    margin-top: 3%;
+    width: 80%;
+}
+.contTitle {
+    margin: 2% auto;
+    border: 2px solid black;
+}
+.title {
+    text-align: center;
+}
+/*------------------------------------*/
+.contSection {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+/*------------------------------------*/
+.contUp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 2px solid black;
+}
+.contLeftTeam, .contRightTeam {
+    width: 100%;
+    padding: 1%;
+}
+.leftTeamTitle, .rightTeamTitle {
+    text-align: center;
+}
+/*------------------------------------*/
+.contButtons {
+    margin: auto;
+    text-align: center;
+}
+.button {
+    width: 50px;
+    height: 35px;
+}
+.buttonAdd {
+    background-color:chartreuse;
+}
+.buttonRest {
+    background-color:crimson;
+}
+/*------------------------------------*/
+.contDown {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.leftTeamCounter, .rightTeamCounter {
+    width: 100%;
+    min-height: 300px;
+    height: max-content;
+}
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+
+
+.midGame {
+    margin: auto;
+    border-bottom: 2px solid crimson;
+    max-width: 90%;
+}
+
+.slash {
+    margin: 0;
+    border-style: solid;
+    height: 106px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -22%;
+    left: 48%;
+}
+
+.onePoints {
+    margin: 5% auto;
+    width: 80px;
+    height: 80px;
+    border: solid;
+    border-width: 2px 0px 0px 0px;
+    position: relative;
+}
+.twoPoints {
+    margin: 5% auto;
+    width: 80px;
+    height: 80px;
+    border: solid;
+    border-width: 2px 2px 0px 0px;
+    position: relative;
+}
+.threePoints {
+    margin: 5% auto;
+    width: 80px;
+    height: 80px;
+    border: solid;
+    border-width: 2px 2px 2px 0px;
+    position: relative;
+}
+.fourPoints {
+    margin: 5% auto;
+    width: 80px;
+    height: 80px;
+    border: solid;
+    border-width: 2px 2px 2px 2px;
+    position: relative;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./imgs/brand.svg">
+    <title>TRUCO ETP</title>
+</head>
+<body>
+    <div class="contGeneral">
+        <div class="contTitle">
+            <h1 class="title">TRUCO ETP</h1>
+        </div>
+        <div class="contSection">
+            <div class="contUp">
+                <div class="contLeftTeam divisorLine">
+                    <h3 class="leftTeamTitle">Yo|Nos</h3>
+                    <div class="contButtons">
+                        <input type="button" value="+" class="button buttonAdd" onclick="leftTeamAdd()">
+                        <input type="button" value="-" class="button buttonRest" onclick="leftTeamRest()">
+                    </div>
+                </div>
+                <div class="contRightTeam">
+                    <h3 class="rightTeamTitle">El|Ellos</h3>
+                    <div class="contButtons">
+                        <input type="button" value="+" class="button buttonAdd" onclick="rightTeamAdd()">
+                        <input type="button" value="-" class="button buttonRest" onclick="rightTeamRest()">
+                    </div>
+                </div>
+            </div>
+            <div class="contDown">
+                <div id="leftTeamCounter" class="leftTeamCounter divisorLine">
+                    <div id="leftPoint" class=""><div id="leftSlashDiv" class=" "></div></div>
+                </div>
+                <div id="rightTeamCounter" class="rightTeamCounter">
+                    <div id="rightPoint" class=""><div id="rightSlashDiv" class=" "></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
