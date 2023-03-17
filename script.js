@@ -1,16 +1,36 @@
 let leftTeamCounter = document.getElementById("leftTeamCounter")
+let leftMidgame = document.getElementById("leftMidgame")
+let rightMidgame = document.getElementById("rightMidgame")
 let leftCounter = 0
-let leftPoint = undefined
-let leftPoint2 = undefined
-let leftPoint3 = undefined
-let leftSlashDiv = undefined
+
+
+let midgameFunction = () => {
+    if (leftCounter >= 16) {
+        leftMidgame.className = "midgame"
+    } else {
+        leftMidgame.className = " "
+    }
+
+    if (rightCounter >= 16) {
+        rightMidgame.className = "midgame"
+    } else {
+        rightMidgame.className = " "
+    }
+}
+
 let leftTeam = () => {
     leftPoint = document.getElementById("leftPoint")
     leftPoint2 = document.getElementById("leftPoint2")
     leftPoint3 = document.getElementById("leftPoint3")
+    leftPoint4 = document.getElementById("leftPoint4")
+    leftPoint5 = document.getElementById("leftPoint5")
+    leftPoint6 = document.getElementById("leftPoint6")
     leftSlashDiv = document.getElementById("leftSlashDiv")
     leftSlashDiv2 = document.getElementById("leftSlashDiv2")
     leftSlashDiv3 = document.getElementById("leftSlashDiv3")
+    leftSlashDiv4 = document.getElementById("leftSlashDiv4")
+    leftSlashDiv5 = document.getElementById("leftSlashDiv5")
+    leftSlashDiv6 = document.getElementById("leftSlashDiv6")
     if (leftCounter <= 1) {
         for (let i = 0; i <= leftCounter; i++) {
             if (i === 0) {
@@ -18,7 +38,7 @@ let leftTeam = () => {
             }
         }
     }
-    if (leftCounter > 0 && leftCounter <= 15 ) {
+    if (leftCounter > 0 && leftCounter <= 30 ) {
         for (let i = 0; i <= leftCounter; i++) {
             if (i === 1) {
                 leftPoint.className = "onePoints"
@@ -69,13 +89,67 @@ let leftTeam = () => {
             }
             if (i === 15) {
                 leftSlashDiv3.className = "slash"
+                leftPoint4.className = " "
+            }
+            if (i === 16) {
+                leftPoint4.className = "onePoints"
+            }
+            if (i === 17) {
+                leftPoint4.className = "twoPoints"
+            }
+            if (i === 18) {
+                leftPoint4.className = "threePoints"
+            }
+            if (i === 19) {
+                leftPoint4.className = "fourPoints"
+                leftSlashDiv4.className = " "
+            }
+            if (i === 20) {
+                leftSlashDiv4.className = "slash"
+                leftPoint5.className = " "
+            }
+            if (i === 21) {
+                leftPoint5.className = "onePoints"
+            }
+            if (i === 22) {
+                leftPoint5.className = "twoPoints"
+            }
+            if (i === 23) {
+                leftPoint5.className = "threePoints"
+            }
+            if (i === 24) {
+                leftPoint5.className = "fourPoints"
+                leftSlashDiv5.className = " "
+            }
+            if (i === 25) {
+                leftSlashDiv5.className = "slash"
+                leftPoint6.className = " "
+            }
+            if (i === 26) {
+                leftPoint6.className = "onePoints"
+            }
+            if (i === 27) {
+                leftPoint6.className = "twoPoints"
+            }
+            if (i === 28) {
+                leftPoint6.className = "threePoints"
+            }
+            if (i === 29) {
+                leftPoint6.className = "fourPoints"
+                leftSlashDiv6.className = " "
+            }
+            if (i === 30) {
+                leftSlashDiv6.className = "slash"
             }
         }
     }
 }
 let leftTeamAdd = () => {
-    leftCounter++
+    if (leftCounter < 30) {
+        leftCounter++
+    }
     leftTeam()
+    midgameFunction()
 }
 
 let leftTeamRest = () => {
@@ -83,21 +157,24 @@ let leftTeamRest = () => {
         leftCounter--
     }
     leftTeam()
+    midgameFunction()
 }
 
 let rightTeamCounter = document.getElementById("rightTeamCounter")
 let rightCounter = 0
-let rightPoint = undefined
-let rightPoint2 = undefined
-let rightPoint3 = undefined
-let rightSlashDiv = undefined
 let rightTeam = () => {
     rightPoint = document.getElementById("rightPoint")
     rightPoint2 = document.getElementById("rightPoint2")
     rightPoint3 = document.getElementById("rightPoint3")
+    rightPoint4 = document.getElementById("rightPoint4")
+    rightPoint5 = document.getElementById("rightPoint5")
+    rightPoint6 = document.getElementById("rightPoint6")
     rightSlashDiv = document.getElementById("rightSlashDiv")
     rightSlashDiv2 = document.getElementById("rightSlashDiv2")
     rightSlashDiv3 = document.getElementById("rightSlashDiv3")
+    rightSlashDiv4 = document.getElementById("rightSlashDiv4")
+    rightSlashDiv5 = document.getElementById("rightSlashDiv5")
+    rightSlashDiv6 = document.getElementById("rightSlashDiv6")
     if (rightCounter <= 1) {
         for (let i = 0; i <= rightCounter; i++) {
             if (i === 0) {
@@ -105,7 +182,7 @@ let rightTeam = () => {
             }
         }
     }
-    if (rightCounter > 0 && rightCounter <= 15 ) {
+    if (rightCounter > 0 && rightCounter <= 30 ) {
         for (let i = 0; i <= rightCounter; i++) {
             if (i === 1) {
                 rightPoint.className = "onePoints"
@@ -156,12 +233,67 @@ let rightTeam = () => {
             }
             if (i === 15) {
                 rightSlashDiv3.className = "slash"
+                rightPoint4.className = " "
+            }
+            if (i === 16) {
+                rightPoint4.className = "onePoints"
+            }
+            if (i === 17) {
+                rightPoint4.className = "twoPoints"
+            }
+            if (i === 18) {
+                rightPoint4.className = "threePoints"
+            }
+            if (i === 19) {
+                rightPoint4.className = "fourPoints"
+                rightSlashDiv4.className = " "
+            }
+            if (i === 20) {
+                rightSlashDiv4.className = "slash"
+                rightPoint5.className = " "
+            }
+            if (i === 21) {
+                rightPoint5.className = "onePoints"
+            }
+            if (i === 22) {
+                rightPoint5.className = "twoPoints"
+            }
+            if (i === 23) {
+                rightPoint5.className = "threePoints"
+            }
+            if (i === 24) {
+                rightPoint5.className = "fourPoints"
+                rightSlashDiv5.className = " "
+            }
+            if (i === 25) {
+                rightSlashDiv5.className = "slash"
+                rightPoint6.className = " "
+            }
+            if (i === 26) {
+                rightPoint6.className = "onePoints"
+            }
+            if (i === 27) {
+                rightPoint6.className = "twoPoints"
+            }
+            if (i === 28) {
+                rightPoint6.className = "threePoints"
+            }
+            if (i === 29) {
+                rightPoint6.className = "fourPoints"
+                rightSlashDiv6.className = " "
+            }
+            if (i === 30) {
+                rightSlashDiv6.className = "slash"
+                console.log();
             }
         }
     }
 }
 let rightTeamAdd = () => {
-    rightCounter++
+    if (rightCounter < 30) {
+        rightCounter++
+    }
+    midgameFunction()
     rightTeam()
 }
 
@@ -169,5 +301,6 @@ let rightTeamRest = () => {
     if (rightCounter > 0) {
         rightCounter--
     }
+    midgameFunction()
     rightTeam()
 }
