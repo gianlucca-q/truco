@@ -1,97 +1,130 @@
+:root {
+    --primary-color: crimson;
+    --secondary-color: bisque;
+    --third-color: #5d3734;
+}
+
+* {
+    user-select: none;
+    -webkit-user-drag: none;
+    transition: all .2s;
+}
+
 html, body {
-    background-color: blanchedalmond;
+    background-image: url(./imgs/trucoBackground.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
 }
 /*------------------------------------*/
-.divisorLine {
-    border-right: 2px solid black;
-}
+/*------------------------------------*/
 /*------------------------------------*/
 .contGeneral {
     margin: auto;
-    margin-top: 3%;
-    width: 80%;
+    padding: 2vh 0;
+    width: 90%;
+    color: var(--secondary-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.opacity {
+    background: rgba(0, 0, 0, 0.5);
+}
+.opacity2 {
+    background: rgba(0, 0, 0, 0.7);
+}
+.grow:hover {
+    transform: scale(1.1);
+}
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
 .contTitle {
-    margin: 2% auto;
-    border: 2px solid black;
+    margin: auto;
+    padding: 1vh;
+    color: var(--primary-color);
 }
 .title {
     text-align: center;
+    margin: auto;
 }
 /*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
 .contSection {
-    margin: auto;
+    margin: 2vh auto;
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 50%;
 }
+/*------------------------------------*/
+/*------------------------------------*/
 /*------------------------------------*/
 .contUp {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--secondary-color);
 }
 .contLeftTeam, .contRightTeam {
     width: 100%;
-    padding: 1%;
+    padding: 2vh;
 }
 .leftTeamTitle, .rightTeamTitle {
+    margin: auto;
     text-align: center;
+    text-transform: uppercase;
 }
 /*------------------------------------*/
 .contButtons {
     margin: auto;
-    text-align: center;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-around;
 }
 .button {
-    width: 50px;
-    height: 35px;
+    width: 100px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+}
+.buttonText {
+    margin: auto;
+    font-size: 1.5em;
+    text-align: center;
 }
 .buttonAdd {
-    background-color:chartreuse;
+    background-color:var(--primary-color);
 }
 .buttonRest {
-    background-color:crimson;
+    background-color: var(--third-color);
+    color: white;
 }
+/*------------------------------------*/
+/*------------------------------------*/
 /*------------------------------------*/
 .contDown {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
+.divisorLine {
+    border-right: 2px solid var(--secondary-color);
+}
 .leftTeamCounter, .rightTeamCounter {
     width: 100%;
-    min-height: 300px;
-    height: max-content;
+    min-height: 100%;
 }
-/*------------------------------------*/
-/*------------------------------------*/
-/*------------------------------------*/
-
-
-.midGame {
+.midgame {
     margin: auto;
-    border-bottom: 2px solid crimson;
+    border-bottom: 2px solid var(--primary-color);
     max-width: 90%;
 }
-
-.slash {
-    margin: 0;
-    border-style: solid;
-    height: 106px;
-    transform: rotate(45deg);
-    position: absolute;
-    top: -22%;
-    left: 48%;
-}
-
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
 .onePoints {
     margin: 5% auto;
     width: 80px;
@@ -124,7 +157,18 @@ html, body {
     border-width: 2px 2px 2px 2px;
     position: relative;
 }
-
+.slash {
+    margin: 0;
+    border-style: solid;
+    height: 106px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -22%;
+    left: 48%;
+}
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
 @media (max-width: 400px) {
     .contSection {
      width: 100%;
