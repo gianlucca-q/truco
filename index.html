@@ -7,40 +7,48 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./imgs/brand.svg">
-    <title>TRUCO 6TO ETP</title>
+    <title>TRUCO 713</title>
 </head>
-<body>
+<body class="opacity">
     <div class="contGeneral">
-        <div class="contTitle">
-            <h1 class="title">TRUCO 6TO ETP</h1>
+        <div class="contTitle opacity2">
+            <h1 class="title">ANOTADOR DE TRUCO 713</h1>
         </div>
-        <div class="contSection">
+        <div class="contSection opacity2">
             <div class="contUp">
                 <div class="contLeftTeam divisorLine">
-                    <h3 class="leftTeamTitle">Yo|Nos</h3>
+                    <h3 class="leftTeamTitle">Yo | Nos</h3>
                     <div class="contButtons">
-                        <input type="button" value="+" class="button buttonAdd" onclick="leftTeamAdd()">
-                        <input type="button" value="-" class="button buttonRest" onclick="leftTeamRest()">
+                        <button value="+" class="button buttonAdd grow" onclick="leftTeamAdd()"><p class="buttonText">+</p></button>
+                        <button value="-" class="button buttonRest grow" onclick="leftTeamRest()"><p class="buttonText">-</p></button>
                     </div>
                 </div>
                 <div class="contRightTeam">
-                    <h3 class="rightTeamTitle">El|Ellos</h3>
+                    <h3 class="rightTeamTitle">El | Ellos</h3>
                     <div class="contButtons">
-                        <input type="button" value="+" class="button buttonAdd" onclick="rightTeamAdd()">
-                        <input type="button" value="-" class="button buttonRest" onclick="rightTeamRest()">
+                        <button value="+" class="button buttonAdd grow" onclick="rightTeamAdd()"><p class="buttonText">+</p></button>
+                        <button value="-" class="button buttonRest grow" onclick="rightTeamRest()"><p class="buttonText">-</p></button>
                     </div>
                 </div>
             </div>
             <div class="contDown">
                 <div id="leftTeamCounter" class="leftTeamCounter divisorLine">
-                    <div id="leftPoint" class=""><div id="leftSlashDiv" class=" "></div></div>
+                    <div id="leftPoint" class=" "><div id="leftSlashDiv" class=" "></div></div>
                     <div id="leftPoint2" class=" "><div id="leftSlashDiv2" class=" "></div></div>
                     <div id="leftPoint3" class=" "><div id="leftSlashDiv3" class=" "></div></div>
+                    <div id="leftMidgame" class=" "></div>
+                    <div id="leftPoint4" class=" "><div id="leftSlashDiv4" class=" "></div></div>
+                    <div id="leftPoint5" class=" "><div id="leftSlashDiv5" class=" "></div></div>
+                    <div id="leftPoint6" class="fourPoints"><div id="leftSlashDiv6" class="slash"></div></div>
                 </div>
                 <div id="rightTeamCounter" class="rightTeamCounter">
-                    <div id="rightPoint" class=""><div id="rightSlashDiv" class=" "></div></div>
+                    <div id="rightPoint" class=" "><div id="rightSlashDiv" class=" "></div></div>
                     <div id="rightPoint2" class=" "><div id="rightSlashDiv2" class=" "></div></div>
                     <div id="rightPoint3" class=" "><div id="rightSlashDiv3" class=" "></div></div>
+                    <div id="rightMidgame" class=" "></div>
+                    <div id="rightPoint4" class=" "><div id="rightSlashDiv4" class=" "></div></div>
+                    <div id="rightPoint5" class=" "><div id="rightSlashDiv5" class=" "></div></div>
+                    <div id="rightPoint6" class=" "><div id="rightSlashDiv6" class=" "></div></div>
                 </div>
             </div>
         </div>
