@@ -142,6 +142,22 @@ html, body {
 /*------------------------------------*/
 /*------------------------------------*/
 /*------------------------------------*/
+.copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1vh;
+}
+.copyright h3 {
+    margin: auto;
+    font-size: 1em;
+    
+    color: var(--secondary-color);
+    font-family: var(--font);
+}
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
 .onePoints {
     margin: 5% auto;
     width: 80px;
@@ -200,6 +216,10 @@ html, body {
     }
 }
 @media (max-width: 768px) {
+    .copyright {
+        flex-direction: column;
+        text-align: center;
+    }
     .contSection {
         width: 100%;
     }
@@ -213,9 +233,6 @@ html, body {
     }
 }
 @media (max-width: 425px) {
-    html, body {
-        height: max-content;
-    }
     .button {
         width: 60px;
     }
