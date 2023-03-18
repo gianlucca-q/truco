@@ -7,7 +7,7 @@
 * {
     user-select: none;
     -webkit-user-drag: none;
-    transition: all .2s;
+    transition: all .2s ease-in;
 }
 
 html, body {
@@ -56,7 +56,7 @@ html, body {
     margin: 2vh auto;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 60%;
 }
 /*------------------------------------*/
 /*------------------------------------*/
@@ -84,7 +84,7 @@ html, body {
     justify-content: space-around;
 }
 .button {
-    width: 100px;
+    width: 150px;
     height: 40px;
     padding: 0;
     border: none;
@@ -92,7 +92,7 @@ html, body {
 }
 .buttonText {
     margin: auto;
-    font-size: 1.5em;
+    font-size: 1.4em;
     text-align: center;
 }
 .buttonAdd {
@@ -169,8 +169,45 @@ html, body {
 /*------------------------------------*/
 /*------------------------------------*/
 /*------------------------------------*/
-@media (max-width: 400px) {
+@media (max-width: 1440px) {
     .contSection {
-     width: 100%;
-     }
+        width: 80%;
+    }
+}
+@media (max-width: 1024px) {
+    .contSection {
+        width: 90%;
+    }
+    .button {
+        width: 120px;
+    }
+}
+@media (max-width: 768px) {
+    .contSection {
+        width: 100%;
+    }
+    .button {
+        width: 100px;
+    }
+}
+@media (max-width: 600px) {
+    .button {
+        width: 70px;
+    }
+}
+@media (max-width: 425px) {
+    .button {
+        width: 60px;
+    }
+}
+@media (max-width: 375px) {
+    .contButtons {
+        flex-direction: column;
+    }
+    .button {
+        margin: auto;
+    }
+    .buttonAdd {
+        margin-bottom: 1vh;
+    }
 }
