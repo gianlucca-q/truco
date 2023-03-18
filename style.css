@@ -1,7 +1,11 @@
+@import url(//db.onlinewebfonts.com/c/47155b43ea197400835b2b0aad6bbb86?family=ArltTituloW01-Hueca);
+
 :root {
     --primary-color: crimson;
     --secondary-color: bisque;
     --third-color: #5d3734;
+    --text-caps: uppercase;
+    --font: ArltTituloW01-Hueca;
 }
 
 * {
@@ -26,7 +30,7 @@ html, body {
     padding: 2vh 0;
     width: 90%;
     color: var(--secondary-color);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font);
 }
 .opacity {
     background: rgba(0, 0, 0, 0.5);
@@ -48,6 +52,10 @@ html, body {
 .title {
     text-align: center;
     margin: auto;
+    color: var(--secondary-color);
+    font-family: var(--font);
+    text-transform: var(--text-caps);
+    letter-spacing: 1px;
 }
 /*------------------------------------*/
 /*------------------------------------*/
@@ -74,7 +82,9 @@ html, body {
 .leftTeamTitle, .rightTeamTitle {
     margin: auto;
     text-align: center;
-    text-transform: uppercase;
+    color: var(--secondary-color);
+    font-family: var(--font);
+    text-transform: var(--text-caps);
 }
 /*------------------------------------*/
 .contButtons {
