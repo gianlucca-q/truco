@@ -27,6 +27,11 @@ html, body {
 /*------------------------------------*/
 /*------------------------------------*/
 /*------------------------------------*/
+.contRealMain {
+    margin: auto;
+    min-height: 100vh;
+    height: max-content;
+}
 .contGeneral {
     margin: auto;
     padding: 2vh 0;
