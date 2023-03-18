@@ -15,12 +15,14 @@
 }
 
 html, body {
+    background-color: black;
     background-image: url(./imgs/trucoBackground.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     background-position: center;
-    height: max-content;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
 }
 /*------------------------------------*/
 /*------------------------------------*/
@@ -206,6 +208,9 @@ html, body {
     }
 }
 @media (max-width: 425px) {
+    html, body {
+        height: max-content;
+    }
     .button {
         width: 60px;
     }
