@@ -29,7 +29,7 @@ html, body {
 /*------------------------------------*/
 .contRealMain {
     margin: auto;
-    min-height: 100vh;
+    min-height: 100%;
     height: max-content;
 }
 .contGeneral {
@@ -59,7 +59,7 @@ html, body {
 .title {
     text-align: center;
     margin: auto;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     font-family: var(--font);
     text-transform: var(--text-caps);
     letter-spacing: 1px;
