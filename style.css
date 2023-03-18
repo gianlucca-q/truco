@@ -233,6 +233,9 @@ html, body {
     }
 }
 @media (max-width: 425px) {
+    .copyright {
+        font-size: .8em;
+    }
     .button {
         width: 60px;
     }
