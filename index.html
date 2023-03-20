@@ -13,11 +13,6 @@
 <body>
     <div class="contRealMain opacity">
         <div class="contGeneral">
-            <div class="copyright row">
-                <h3 class="col">Gianlucca Basilio Quinteros Oszust | @gianlucca_q</h3>
-                <h3 class="col">©Copyright 2023</h3>
-                <h3 class="col">Backend help by @leonel_pala</h3>
-            </div>  
             <div class="contTitle opacity2">
                 <h1 class="title">Anotador de Truco 713</h1>
             </div>
@@ -38,7 +33,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="contDown">
+                <div id="contDown" class="contDown">
                     <div id="leftTeamCounter" class="leftTeamCounter divisorLine" onclick="leftTeamAdd()">
                         <div id="leftPoint" class=" "><div id="leftSlashDiv" class=" "></div></div>
                         <div id="leftPoint2" class=" "><div id="leftSlashDiv2" class=" "></div></div>
@@ -59,6 +54,14 @@
                     </div>
                 </div>
             </div>
+            <div class="contReset">
+                <button class="button buttonReset reset" onclick="resetGame()">Reiniciar</button>
+            </div>
+        </div>
+        <div class="copyright row">
+            <h3 class="col">Gianlucca Basilio Quinteros Oszust | @gianlucca_q</h3>
+            <h3 class="col">©Copyright 2023</h3>
+            <h3 class="col">Backend help by @leonel_pala</h3>
         </div>
     </div>
     <script src="./script.js"></script>
