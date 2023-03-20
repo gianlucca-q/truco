@@ -1,4 +1,9 @@
-@import url(//db.onlinewebfonts.com/c/47155b43ea197400835b2b0aad6bbb86?family=ArltTituloW01-Hueca);
+@font-face {
+    font-family: 'ArltTituloW01-Hueca';
+    src: url('./fonts/ArltTitulo.eot'), url('./fonts/ArltTitulo.ttf') format('truetype'), url('./fonts/ArltTitulo.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 :root {
     --primary-color: crimson;
