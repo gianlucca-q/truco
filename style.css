@@ -11,7 +11,7 @@
 * {
     user-select: none;
     -webkit-user-drag: none;
-    transition: all .2s ease-in;
+    transition: all .05s ease-in;
 }
 
 html, body {
@@ -38,6 +38,7 @@ html, body {
     width: 90%;
     color: var(--secondary-color);
     font-family: var(--font);
+    min-height: 95vh;
 }
 .opacity {
     background: rgba(0, 0, 0, 0.5);
@@ -132,25 +133,34 @@ html, body {
 }
 .leftTeamCounter, .rightTeamCounter {
     width: 100%;
-    min-height: 100%;
 }
 .midgame {
     margin: auto;
     border-bottom: 2px solid var(--primary-color);
     max-width: 90%;
 }
+.loleado {
+    min-height: 600px;
+}
 /*------------------------------------*/
 /*------------------------------------*/
 /*------------------------------------*/
 .copyright {
-    margin: auto;
-    text-align: center;
     margin-bottom: 1vh;
+    text-align: center;
+    margin: auto;
 }
 .copyright h3 {
     font-size: 1em;
     color: var(--secondary-color);
     font-family: var(--font);
+}
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+.contReset {
+    margin: auto;
+    text-align: center;
 }
 /*------------------------------------*/
 /*------------------------------------*/
@@ -190,12 +200,18 @@ html, body {
 .slash {
     margin: 0;
     border-style: solid;
-    height: 106px;
+    border-width: 1px;
+    height: 110px;
     transform: rotate(45deg);
     position: absolute;
     top: -22%;
-    left: 48%;
+    left: 50%;
+    transition: none;
 }
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+
 /*------------------------------------*/
 /*------------------------------------*/
 /*------------------------------------*/
