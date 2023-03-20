@@ -1,10 +1,43 @@
 let leftTeamCounter = document.getElementById("leftTeamCounter")
 let leftMidgame = document.getElementById("leftMidgame")
 let rightMidgame = document.getElementById("rightMidgame")
+let contDown = document.getElementById("contDown")
+
+const ganadorFunc = () => {
+    alert(`El ganador es ${ganador}`)
+}
+
+const resetGame = () => {
+    leftCounter = 0
+    leftPoint.className = " "
+    leftPoint2.className = " "
+    leftPoint3.className = " "
+    leftPoint4.className = " "
+    leftPoint5.className = " "
+    leftPoint6.className = " "
+    leftSlashDiv.className = " "
+    leftSlashDiv2.className = " "
+    leftSlashDiv3.className = " "
+    leftSlashDiv4.className = " "
+    leftSlashDiv5.className = " "
+    leftSlashDiv6.className = " "
+    rightCounter = 0
+    rightPoint.className = " "
+    rightPoint2.className = " "
+    rightPoint3.className = " "
+    rightPoint4.className = " "
+    rightPoint5.className = " "
+    rightPoint6.className = " "
+    rightSlashDiv.className = " "
+    rightSlashDiv2.className = " "
+    rightSlashDiv3.className = " "
+    rightSlashDiv4.className = " "
+    rightSlashDiv5.className = " "
+    rightSlashDiv6.className = " "
+}
+
 let leftCounter = 0
-
-
-let midgameFunction = () => {
+const midgameFunction = () => {
     if (leftCounter >= 16) {
         leftMidgame.className = "midgame"
     } else {
@@ -18,7 +51,7 @@ let midgameFunction = () => {
     }
 }
 
-let leftTeam = () => {
+const leftTeam = () => {
     leftPoint = document.getElementById("leftPoint")
     leftPoint2 = document.getElementById("leftPoint2")
     leftPoint3 = document.getElementById("leftPoint3")
@@ -90,9 +123,11 @@ let leftTeam = () => {
             if (i === 15) {
                 leftSlashDiv3.className = "slash"
                 leftPoint4.className = " "
+                contDown.className = "contDown"
             }
             if (i === 16) {
                 leftPoint4.className = "onePoints"
+                contDown.className = "contDown loleado"
             }
             if (i === 17) {
                 leftPoint4.className = "twoPoints"
@@ -140,11 +175,15 @@ let leftTeam = () => {
             }
             if (i === 30) {
                 leftSlashDiv6.className = "slash"
+                ganador = "YO | NOS"
+                contDown.className = "contDown"
+                ganadorFunc()
+                resetGame()
             }
         }
     }
 }
-let leftTeamAdd = () => {
+const leftTeamAdd = () => {
     if (leftCounter < 30) {
         leftCounter++
     }
@@ -152,7 +191,7 @@ let leftTeamAdd = () => {
     midgameFunction()
 }
 
-let leftTeamRest = () => {
+const leftTeamRest = () => {
     if (leftCounter > 0) {
         leftCounter--
     }
@@ -162,7 +201,7 @@ let leftTeamRest = () => {
 
 let rightTeamCounter = document.getElementById("rightTeamCounter")
 let rightCounter = 0
-let rightTeam = () => {
+const rightTeam = () => {
     rightPoint = document.getElementById("rightPoint")
     rightPoint2 = document.getElementById("rightPoint2")
     rightPoint3 = document.getElementById("rightPoint3")
@@ -284,12 +323,15 @@ let rightTeam = () => {
             }
             if (i === 30) {
                 rightSlashDiv6.className = "slash"
-                console.log();
+                ganador = "EL | ELLOS"
+                contDown.className = "contDown"
+                ganadorFunc()
+                resetGame()
             }
         }
     }
 }
-let rightTeamAdd = () => {
+const rightTeamAdd = () => {
     if (rightCounter < 30) {
         rightCounter++
     }
@@ -297,7 +339,7 @@ let rightTeamAdd = () => {
     rightTeam()
 }
 
-let rightTeamRest = () => {
+const rightTeamRest = () => {
     if (rightCounter > 0) {
         rightCounter--
     }
